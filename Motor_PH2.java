@@ -20,7 +20,7 @@ public class Motor_PH2       {
         String year = input.next();
         
         
-        // Inputs for Calculation
+        // Inputs for Calculation of Working Hours
 
         //monday
         System.out.println("Enter Time in 24 hrs format");
@@ -70,9 +70,12 @@ public class Motor_PH2       {
         System.out.print(friho + ":");
         int frimo = input.nextInt();
         
-        
+        // Inputs for Calculation of Gross
+        System.out.print("Enter your Hourly Rate: ");
+        double rate = input.nextInt();
 
-        // Calculation
+
+        // Calculation of Working Hours
         //monday
         double monI = (monh * 60) + monm ;
         double monO = (monho * 60) + monmo ;
@@ -96,7 +99,8 @@ public class Motor_PH2       {
 
         double total = mon + tue + wed + thu + fri ;
 
-
+        // Calculation of gross
+        double gross = total * rate ;
 
 
         //Out puts
@@ -109,6 +113,8 @@ public class Motor_PH2       {
         System.out.println("Name: " + last + " " + first);
         System.out.println("Birthdate: " + month + " " + date + " " + year);
         System.out.println("Your total working hours this week is: " + total +" hrs");
+        System.out.println("Your gross weekly salary is: " +" Php "+ gross );
+        
 
         // closing the scanner object
         input.close();
