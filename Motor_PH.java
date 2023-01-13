@@ -27,19 +27,28 @@ public class Motor_PH       {
         double thu = input.nextDouble();
         System.out.print("Enter Working Hours Last Friday (Input Zero if absent): ");
         double fri = input.nextDouble();
+        
 
         // Calculation
         double thours = mon + tue + wed + thu + fri;
 
 
+        
+
+        // closing the scanner object
+        input.close();
+
+
+
         //Out puts
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println(" ");
+        System.out.println("Good Day " + first + "!");
         System.out.println("Employee Number: " + empn);
         System.out.println("Name: " + last + " " + first);
         System.out.println("Birthdate: " + month + " " + date + " " + year);
         System.out.println("Your total working hours this week: " + thours + " hrs");
-
-        // closing the scanner object
-        input.close();
         
     }
 }
